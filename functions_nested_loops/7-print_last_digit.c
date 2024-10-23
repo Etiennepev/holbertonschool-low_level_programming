@@ -6,14 +6,20 @@
 *sa valeur absolue
 *
 *@n: Le caractere a verifier
-*Return: n si le caractere est positif et -n
-*si il est negatif
+*Return:
+*
 *
 */
 
 int print_last_digit(int n)
 {
-int lastdgt = n % 10;
+	int lastdgt = n % 10;
+
+	if (lastdgt < 0)
+{
+	lastdgt = -lastdgt
+}
+	_putchar(lastdgt + '0');
 
 return (lastdgt);
 }
