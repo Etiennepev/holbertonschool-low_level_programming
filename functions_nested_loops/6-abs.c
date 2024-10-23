@@ -5,7 +5,7 @@
 *_abs - prend un entier comme argument et renvoie
 *sa valeur absolue
 *
-*@int n: Le caractere a verifier
+*@n: Le caractere a verifier
 *Return: n si le caractere est positif et -n
 *si il est negatif
 *
