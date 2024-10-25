@@ -1,19 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* add - Affiche
-*
+*add - fais une addition de a et b
+*@a: The first integer to add.
+*@b: The second integer to add.
 *
 */
 
-int add(int, int)
+int add(int a, int b)
 {
-	int n;
 
-	{
-	n = add(90, 10);
-
-	_putchar('n');
-	}
-	return (100);
+	return (a + b);
 }
