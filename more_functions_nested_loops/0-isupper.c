@@ -8,16 +8,16 @@
  */
 int _isupper(int c)
 {
-	if (c > 64 && c < 90)
+	if (c >= 'A' && c <= 'Z')
 	{
-		_putchar('A');
+		_putchar(c);
 		_putchar(':');
 		_putchar(' ');
 		return (1);
 	}
 	else
 	{
-		_putchar('a');
+		_putchar(c);
 		_putchar(':');
 		_putchar(' ');
 		return (0);
