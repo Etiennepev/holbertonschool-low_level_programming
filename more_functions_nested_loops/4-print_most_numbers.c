@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * _isdigit - digit to return
- * @c: The character to print
- *
+ * print_most_numbers - print numbers exept 2 and 4
+ * 
  *
  *
  */
@@ -16,5 +15,6 @@ void print_most_numbers(void)
 		{
 		_putchar(n);
 	}
-		_putchar('\n');
-}}
+	}
+	_putchar('\n');
+}
