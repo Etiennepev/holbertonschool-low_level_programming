@@ -1,10 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_numbers - print numbers
- * @n: The character to print
- *
- *
+ * print_numbers - Prints numbers from 0 to 9
+ * 
  *
  */
 void print_numbers(void)
