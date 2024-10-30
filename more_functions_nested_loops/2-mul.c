@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * mul - multiplies two integers
- * @a, b: The character to print
- *
+ * @a: The character to multiply
+ * @b: The character to multiply
  * Return: 1 if uppercase else 0
  *
  */
