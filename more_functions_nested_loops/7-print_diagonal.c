@@ -3,7 +3,7 @@
 /**
  * print_diagonal - Print diagonal
  *
- *@n: number of underscore
+ *@n: number of diagonal
  */
 void print_diagonal(int n)
 {
