@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_line - Prints lines
+ * print_diagonal - Print diagonal
  *
  *@n: number of underscore
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int a = 0;
 
