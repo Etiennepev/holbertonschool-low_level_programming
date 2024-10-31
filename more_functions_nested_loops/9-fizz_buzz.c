@@ -1,5 +1,6 @@
 #include <stdio.h>
 /**
+ *main - print fizzbuzz
  *
  *@i: print numbers
  *Return: return 0
