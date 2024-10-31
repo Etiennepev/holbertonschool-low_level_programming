@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_diagonal - Print diagonal
+ * print_square - Print square
  *
- *@n: number of diagonal
+ *@size: taille du carre
  */
 void print_square(int size)
 {
