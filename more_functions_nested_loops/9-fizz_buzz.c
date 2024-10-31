@@ -1,12 +1,14 @@
 #include <stdio.h>
 /**
  *
- *
+ *@i: print numbers
  *Return: return 0
  */
-int main (void)
+int main(void)
 {
-	for (int i = 1; i <= 100; i++)
+	int i = 1;
+
+	for (; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
