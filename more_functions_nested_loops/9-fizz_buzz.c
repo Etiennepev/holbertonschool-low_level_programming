@@ -26,9 +26,5 @@ int main (void)
 			printf("%d\n", i);
 		}
 	}
-}
-	int main ()
-	{
-		fizz_buzz();
 	return (0);
-	}
+}
