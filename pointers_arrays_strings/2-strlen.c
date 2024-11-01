@@ -10,4 +10,7 @@
 int _strlen(char *s)
 {
 	char str[] = {'H', 'e', 'l', 'l', 'o', '\0'};
+
+	_putchar(str);
+	return(0);
 }
