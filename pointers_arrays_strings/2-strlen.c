@@ -11,6 +11,6 @@ int _strlen(char *s)
 {
 	char str[] = {'H', 'e', 'l', 'l', 'o', '\0'};
 
-	_putchar(str);
+	_putchar(*s);
 	return(0);
 }
