@@ -9,12 +9,11 @@
 
 int _strlen(char *s)
 {
-	char str[] = {'H', 'e', 'l', 'l', 'o', '\0'};
+	int len = 0;
 
-	for (int i = 0; str[i] != '\0'; i++)
+	for (int i = 0; s[i] != '\0'; i++)
 	{
-	_putchar(str[i]);
+	len++;
 	}
-	putchar('\n');
-	return(0);
+	return (len);
 }
