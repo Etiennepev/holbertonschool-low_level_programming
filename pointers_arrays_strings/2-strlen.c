@@ -6,7 +6,6 @@
  *@s: l'endroit ou est la chaine de caracteres
  *Return: 1 or 0
  */
-
 int _strlen(char *s)
 {
 	int len = 0;
