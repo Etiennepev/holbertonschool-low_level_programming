@@ -16,11 +16,11 @@ void puts_half(char *str)
 		a++;
 	}
 
-	moit = a / 2;
+	moit = a / 2
 
 	if (a % 2 == 1)
 	{
-		a++;
+		moit++;
 	}
 	while (moit < a)
 	{
