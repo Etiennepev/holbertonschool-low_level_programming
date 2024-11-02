@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * puts_half - take the half of a string
+ * print_array - print an array
  *
- * @str: The string who will be pair or impair
- *
+ * @a: to the array
+ * @n: numbers of elements to print
  */
 
 void print_array(int *a, int n)
