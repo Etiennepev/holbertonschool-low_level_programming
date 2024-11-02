@@ -9,18 +9,23 @@
 void puts_half(char *str)
 {
 	int a = 0;
+	int moit;
 
 	while (str[a] != '\0')
 	{
 		a++;
 	}
-	if (a % 2 == 0)
+
+	moit = a / 2;
+
+	if (a % 2 == 1)
 	{
-		_putchar(str[a]);
+		a++;
 	}
-	else if (a % 1 == 0)
+	while (moit < a)
 	{
-		_putchar(str[a]);
+		_putchar(str[moit]);
+		moit++;
 	}
 	_putchar('\n');
 }
