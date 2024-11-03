@@ -21,7 +21,7 @@ int _atoi(char *s)
 	else if (*s >= '0' && *s <= '9')
 	{
 		debut = 1;
-		result * 10 + (*s - '0');
+		result = result * 10 + (*s - '0');
 	}
 	else if (debut)
 	{
@@ -29,5 +29,5 @@ int _atoi(char *s)
 	}
 	s++;
 	}
-	return (debut * i);
+	return (result * i);
 }
