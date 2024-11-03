@@ -1,10 +1,10 @@
  #include "main.h"
 /**
- * *_strcpy - copy a string
+ * _strncat - concanates two strings
  *
- * @dest: 
- * @src: 
- * @n: 
+ * @dest: the place where src gonna go
+ * @src: to add to dest
+ * @n: the numbers max to add from src
  *
  * Return: the dest result
  */
