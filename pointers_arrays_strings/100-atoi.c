@@ -2,9 +2,7 @@
 /**
  * _atoi - Convert a string to integers
  *
- * @i: Use for the caractere
- * @debut: the begin of the conversion
- * @result: the result of the conversion
+ * @s: the string with carcteres and integers
  * Return: Return an integers of the string or 0
  */
 
@@ -18,7 +16,7 @@ int _atoi(char *s)
 	{
 	if (*s == '-' && debut == 0)
 	{
-		sign *= -1;
+		i *= -1;
 	}
 	else if (*s >= '0' && *s <= '9')
 	{
@@ -31,4 +29,5 @@ int _atoi(char *s)
 	}
 	s++;
 	}
-	return debut * i;
+	return (debut * i);
+}
