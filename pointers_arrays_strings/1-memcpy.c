@@ -1,8 +1,8 @@
  #include "main.h"
 /**
- * *_memset - stock memory
+ * *_memcpy - copy the memory
  *
- * @dest: place to copy 
+ * @dest: place to copy
  * @src: original
  * @n: nombres d'iterations
  * Return: dest
