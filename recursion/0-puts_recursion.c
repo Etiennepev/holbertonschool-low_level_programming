@@ -5,6 +5,7 @@
  *
  *@s: the string we what to print
  *
+ * Return: nothing
  */
 
 void _puts_recursion(char *s)
