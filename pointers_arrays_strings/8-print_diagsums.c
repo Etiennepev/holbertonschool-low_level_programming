@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * _strstr - Locates a substring
+ * print_diagsums - prints the sum of the two diagonals
  *
- * @haystack: the string to analyse
- * @needle: the string with correct words
+ * @size: size
+ * @a: the pointeur
  *
  *
  */
@@ -17,11 +17,10 @@ void print_diagsums(int *a, int size)
 	int sum2 = 0;
 
 	for (; i < size; i++)
-	{	
-		sum1 = sum1 + a[i * size + i];
-		sum2 = sum2 + a[i * size + (size - 1 - i)];
+	{
+		sum1 += a[i * size + i];
+		sum2 += a[i * size + (size - 1 - i)];
 
-		printf("%d\n", sum1);
-		printf("%d\n", sum2);
+		printf("%d, %d\n", sum1, sum2);
 	}
 }
