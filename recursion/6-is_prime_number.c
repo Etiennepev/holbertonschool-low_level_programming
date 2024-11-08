@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * check_primen - 
+ * check_primen - nicee
  *
+ * @y: perfect
  * @n: perfect
  * Return: good
  */
 
-int check_primen (int n, int y)
+int check_primen(int n, int y)
 {
 	if (n >= y)
 	{
@@ -19,7 +20,7 @@ int check_primen (int n, int y)
 	{
 		return (1);
 	}
-	else if ( n % y != 0)
+	else if (n % y != 0)
 	{
 		return (check_primen(n, y + 1));
 	}
@@ -28,7 +29,7 @@ int check_primen (int n, int y)
 }
 
 /**
- * is_prime_number -
+ * is_prime_number - nice
  *
  *@n: yes
  * Return: good
