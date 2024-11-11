@@ -2,7 +2,7 @@
 
 /**
  * create_array - make a string with a specific char
- * 
+ *
  * @size: size of the string
  * @c: initialize every elements with a char
  *
