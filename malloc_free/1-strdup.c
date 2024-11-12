@@ -1,29 +1,38 @@
 #include <stdlib.h>
 
 /**
- * create_array - make a string with a specific char
+ * _strdup - make a string with a specific char
  *
- * @size: size of the string
- * @c: initialize every elements with a char
+ * @str: string
  *
- * Return: a pointer to the string or NULL if it fails or if it 0
+ *
+ * Return: a pointer to the string or NULL if str=NULL or insufficient memory
  */
 
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
-	char *array = (char *)malloc(size * sizeof(char));
+	int i;
+	int size;
+	char *newstr;
 
-	if (size == 0)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
-	if (array == NULL)
+	for (size = 0; str[size] != '\0'; size++)
+	{
+	}
+	newstr = (char *)malloc((size + 1) * sizeof(char));
+
+	if (newstr == NULL)
 	{
 		return (NULL);
 	}
-	for (unsigned int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
-		array[i] = c;
+		newstr[i] = str[i];
 	}
-	return (array);
+	newstr[size] = '\0';
+
+	return (newstr);
 }
