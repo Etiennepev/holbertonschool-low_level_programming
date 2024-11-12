@@ -15,13 +15,17 @@ char *str_concat(char *s1, char *s2)
 	char *newstr;
 
 	if (s1 != NULL)
-
+	{
+	}
 	for (; s1[size1] != '\0'; size1++)
-
+	{
+	}
 	if (s2 != NULL)
-
+	{
+	}
 	for (; s2[size2] != '\0'; size2++)
-
+	{
+	}
 	newstr = (char *)malloc(size1 + size2 + 1 * sizeof(char));
 
 	if (newstr ==  NULL)
