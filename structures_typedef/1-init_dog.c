@@ -3,12 +3,12 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * init_dog - Initialize a dog structure with specific values
- * @d: Pointer to the struct dog to initialize
- * @name: Name of the dog
- * @age: Age of the dog
- * @owner: Name of the owner
- */
+ * init_dog -  initialize a variable of type struct dog.
+ * @d : pointer to the structure.
+ * @name : of the dog.
+ * @age : of the dog.
+ * @owner : name of the owner.
+ **/
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
