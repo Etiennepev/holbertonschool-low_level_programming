@@ -18,14 +18,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 != 0)
 	{
 	}
-	for (; s1[size1] != '\0'; size1++)
+	while (s1[size1] != '\0')
 	{
+		size1++;
 	}
 	if (s2 != 0)
 	{
 	}
-	for (; s2[size2] != '\0' && size2 < n; size2++)
+	while (s2[size2] != '\0' && size2 < n)
 	{
+		size2++;
 	}
 	newstr = (char *)malloc((size1 + size2 + 1) * sizeof(char));
 
