@@ -4,7 +4,7 @@
 /**
  * struct dog - Structure qui définit un chien
  * @name: Nom du chien (chaîne de caractères)
- * @age: Âge du chien (nombre à virgule flottante)
+ * @age: Age du chien (nombre à virgule flottante)
  * @owner: Nom du propriétaire (chaîne de caractères)
  */
 
