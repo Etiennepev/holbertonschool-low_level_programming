@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
+#include <stlib.h>
 
 /**
  * init_dog - Initialize a dog structure with specific values
@@ -8,6 +9,7 @@
  * @age: Age of the dog
  * @owner: Name of the owner
  */
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
