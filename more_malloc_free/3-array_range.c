@@ -20,6 +20,10 @@ int *array_range(int min, int max)
 	}
 	array = (int *)malloc((max - min + 1) * sizeof(int));
 
+	if (array == NULL)
+	{
+		return (NULL);
+	}
 	for (; i <= (max - min); i++)
 	{
 		array[i] = min + i;
