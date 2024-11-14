@@ -2,7 +2,6 @@
 #include "dog.h"
 #include <stdlib.h>
 #include "main.h"
-#include <string.h>
 /**
  * _strlen - returns the length of a string.
  * @s: string to analyze.
@@ -62,18 +61,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	new_dog->name = malloc(strlen(name) + 1);
+	new_dog->name = malloc(_strlen(name) + 1);
 
 	if (new_dog->name == NULL)
 	{
 		free(new_dog);
 		return (NULL);
 	}
-	strcpy(new_dog->name, name, _strlen(name) + 1);
+	_strncpy(new_dog->name, name, _strlen(name) + 1);
 
 	new_dog->age = age;
 
-	new_dog->owner = malloc(strlen(owner) + 1);
+	new_dog->owner = malloc(_strlen(owner) + 1);
 
 	if (new_dog->owner == NULL)
 	{
@@ -81,7 +80,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_dog);
 		return (NULL);
 	}
-	strcpy(new_dog->owner, owner, _strlen(owner) + 1);
+	_strncpy(new_dog->owner, owner, _strlen(owner) + 1);
 
 	return (new_dog);
 }
