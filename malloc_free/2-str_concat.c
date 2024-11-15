@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	for (; s2[size2] != '\0'; size2++)
 	{
 	}
-	newstr = (char *)malloc(size1 + size2 + 1 * sizeof(char));
+	newstr = (char *)malloc((size1 + size2 + 1) * sizeof(char));
 
 	if (newstr ==  NULL)
 	{
