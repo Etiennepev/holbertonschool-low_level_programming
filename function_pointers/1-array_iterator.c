@@ -1,5 +1,4 @@
 #include "function_pointers.h"
-#include <stdlib.h>
 
 /**
  * array_iterator - exec on each element of an array
@@ -19,6 +18,7 @@ if (array != NULL)
 for (; i < size; i++)
 {
 action(array[i]);
+}
 }
 }
 }
