@@ -1,10 +1,9 @@
 #include <stdarg.h>
-#include <stdlib.h>
 #include "variadic_functions.h"
 
 /**
  * sum_them_all - the sum
- * @n: yeah
+ * @n: The number of arguments
  * Return: the sum
  **/
 
