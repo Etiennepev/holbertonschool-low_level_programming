@@ -25,7 +25,7 @@ num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
 operator = get_op_func(argv[2]);
 
-if (operator == NULL || (strlen(argv[2])) != 1)
+if (operator == NULL)
 {
 printf("Error\n");
 exit(99);
