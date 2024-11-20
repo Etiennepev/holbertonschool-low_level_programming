@@ -22,7 +22,7 @@ return (0);
 va_start(args, n);
 for (; i < n; i++)
 {
-sum += va_arg(args, unsigned int);
+sum += va_arg(args, int);
 }
 va_end(args);
 return (sum);
