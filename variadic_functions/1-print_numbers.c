@@ -4,9 +4,10 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - 
+ * print_numbers - print numbers
  * @n: yeah
- * Return: 
+ * @separator: use to separate numbers
+ * Return: nothing
  **/
 
 void print_numbers(const char *separator, const unsigned int n, ...)
