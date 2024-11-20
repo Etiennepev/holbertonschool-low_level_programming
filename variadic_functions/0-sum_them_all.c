@@ -1,11 +1,11 @@
-#include <stdlib.h>
 #include <stdarg.h>
+#include <stdlib.h>
 #include "variadic_functions.h"
 
 /**
  * sum_them_all - the sum
  * @n: yeah
- * Return: something
+ * Return: the sum
  **/
 
 int sum_them_all(const unsigned int n, ...)
