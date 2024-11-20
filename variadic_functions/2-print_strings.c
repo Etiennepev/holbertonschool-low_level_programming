@@ -16,20 +16,21 @@ unsigned int i = 0;
 va_list args;
 
 va_start(args, n);
-for (; i < n; i++)
-{
-char *str = (va_arg(args, char*));
-if (separator != NULL && i != n - 1)
-{
-if (str == NULL)
-{
-printf("(nil)\n");
-}
-printf("%s%s", str, separator);
-}
-else
-printf("%s", str);
-}
-printf("\n");
-va_end(args);
+	for (; i < n; i++)
+	{
+	char *str = (va_arg(args, char*));
+
+	if (separator != NULL && i != n - 1)
+	{
+		if (str == NULL)
+		{
+		printf("(nil)\n");
+		}
+		printf("%s%s", str, separator);
+	}
+	else
+		printf("%s", str);
+	}
+	printf("\n");
+	va_end(args);
 }
