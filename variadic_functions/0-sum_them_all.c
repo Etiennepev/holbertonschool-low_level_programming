@@ -3,24 +3,27 @@
 #include <stdarg.h>
 
 /**
- * get_op_func - function of operation
- * @s: yeah
+ * sum_them_all - the sum
+ * @n: yeah
  * Return: something
  **/
 
-int sum_them_all(const unsigned int n, ...);
+int sum_them_all(const unsigned int n, ...)
 {
 int sum = 0;
+unsigned int i = 0;
+va_list args;
 
 if (n == 0)
 {
 return (0);
 }
-va_list args;
-va_start (args, n);
-for (unsigned int i = 0; i < n; i++)
+
+va_start(args, n);
+for (; i < n; i++)
 {
-
+sum += va_arg(args, unsigned int);
 }
-
+va_end(args);
+return (sum);
 }
