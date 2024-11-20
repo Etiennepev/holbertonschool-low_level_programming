@@ -1,7 +1,6 @@
-#include "3-calc.h"
 #include <string.h>
-#include <stdio.h>
 #include <stdlib.h>
+#include "3-calc.h"
 
 /**
  * get_op_func - function of operation
@@ -23,10 +22,8 @@ op_t ops[] = {
 
 while (ops[i].op != NULL)
 {
-if (strcmp(s, ops[i].op) == 0)
-{
+if (ops[i].op[0] == s[0] && s[1] == '\0')
 return (ops[i].f);
-}
 i++;
 }
 return (NULL);
