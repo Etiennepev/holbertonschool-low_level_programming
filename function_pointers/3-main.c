@@ -1,7 +1,7 @@
-#include "3-calc.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "3-calc.h"
 
 /**
  * main - do operations
@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-int num1 = 0, num2 = 0, result = 0;
+int num1 = 0, num2 = 0;
 int (*operator)(int, int);
 
 if (argc != 4)
@@ -30,7 +30,6 @@ if (operator == NULL || (strlen(argv[2])) != 1)
 printf("Error\n");
 exit(99);
 }
-result = operator(num1, num2);
-printf("%d\n", result);
+printf("%d\n", operator(num1, num2));
 return (0);
 }
