@@ -1,4 +1,3 @@
-#include "function_pointers.h"
 #ifndef _3_CALC_H
 #define _3_CALC_H
 /**
