@@ -22,7 +22,7 @@ va_start(args, n);
 
 	if (str == NULL)
 		{
-		printf("(nil)\n");
+		printf("(nil)");
 		}
 	else
 		printf("%s", str);
