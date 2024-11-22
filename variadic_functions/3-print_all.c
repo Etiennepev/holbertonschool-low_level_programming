@@ -4,19 +4,9 @@
 #include "variadic_functions.h"
 
 /**
- * struct printer - Struct of printer
- * @printer: The printer
- **/
-typedef struct printer
-{
-	char type
-	void (*function)(va_list args, char *separator)
-} printer_t; // Ma structure //
-
-
-/**
  * print_char - print char
- * @format: The number of arguments
+ * @args: The number of arguments
+ * @separator: separator before int
  * Return: something
  **/
 void print_char(va_list args, char *separator)
@@ -26,7 +16,8 @@ void print_char(va_list args, char *separator)
 
 /**
  * print_int - print int
- * @format: The number of arguments
+ * @args: The number of arguments
+ * @separator: separator before int
  * Return: something
  **/
 void print_int(va_list args, char *separator)
@@ -36,7 +27,8 @@ void print_int(va_list args, char *separator)
 
 /**
  * print_float - print float
- * @format: The number of arguments
+ * @args: The number of arguments
+ * @separator: separator before int
  * Return: something
  **/
 void print_float(va_list args, char *separator)
@@ -46,7 +38,8 @@ void print_float(va_list args, char *separator)
 
 /**
  * print_string - print string
- * @format: The number of arguments
+ * @args: The number of arguments
+ * @separator: separator before int
  * Return: something
  **/
 void print_string(va_list args, char *separator)
@@ -60,8 +53,7 @@ void print_string(va_list args, char *separator)
 
 /**
  * print_all - print all, char, int, float, string
- * @format: 
- * Return: something
+ * @format: list of arguments to print
  **/
 
 void print_all(const char * const format, ...)
