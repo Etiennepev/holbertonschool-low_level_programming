@@ -24,13 +24,13 @@ va_start(args, n);
 		{
 		printf("(nil)\n");
 		}
-	}
 	else
 		printf("%s", str);
 
 	if (separator != NULL && i != n - 1)
 	{
 		printf("%s", separator);
+	}
 	}
 	printf("\n");
 	va_end(args);
