@@ -44,7 +44,7 @@ void print_float(va_list args, char *separator)
  **/
 void print_string(va_list args, char *separator)
 {
-	char *str = va_arg(args, char *)
+	char *str = va_arg(args, char *);
 
 	if (str == NULL)
 		str = ("nil");
@@ -59,10 +59,10 @@ void print_string(va_list args, char *separator)
 void print_all(const char * const format, ...)
 {
 	printer_t printers[] = {
-	{"c", print_char},
-	{"i", print_int},
-	{"f", print_float},
-	{"s", print_string},
+	{'c', print_char},
+	{'i', print_int},
+	{'f', print_float},
+	{'s', print_string},
 	{'\0', NULL}
 	};
 
@@ -70,7 +70,7 @@ va_list args;
 unsigned int i = 0, j;
 char *separator = "";
 
-while (format == format[i])
+while (format && format[i])
 {
 	j = 0;
 
