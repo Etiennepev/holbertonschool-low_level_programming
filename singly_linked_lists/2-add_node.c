@@ -4,11 +4,11 @@
 #include "lists.h"
 
 /**
- * add_node - Prints all elements of a list_t list
+ * add_node - Adds a new node at the beginning of a list_t list.
  *
- * @str: 
- * @head: 
- * Return: The nodes in the linked list
+ * @str: The string to be duplicated and added to the new node.
+ * @head: A double pointer to the head of the list.
+ * Return: The address of the new element, or NULL if it failed.
  */
 
 list_t *add_node(list_t **head, const char *str)
