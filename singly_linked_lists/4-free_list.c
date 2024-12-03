@@ -4,10 +4,8 @@
 #include "lists.h"
 
 /**
- * free_list -  
- *
- * @str: 
- * @head: 
+ * free_list -  Frees a list_t linked list
+ * @head: Pointer to the head of the list
  * Return: Void
  */
 void free_list(list_t *head)
@@ -22,7 +20,7 @@ void free_list(list_t *head)
 		head = head->next;
 	}
 	/** Libère la chaîne de caractères du nœud actuel (si elle existe) */
-	free (temp->str);
-	/** Libère le nœud actuel */ 
-	free (temp);
+	free(temp->str);
+	/** Libère le nœud actuel */
+	free(temp);
 }
