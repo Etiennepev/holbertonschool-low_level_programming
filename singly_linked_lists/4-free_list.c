@@ -18,9 +18,9 @@ void free_list(list_t *head)
 		temp = head;
 		/** On avance vers le prochain nœud */
 		head = head->next;
+		/** Libère la chaîne de caractères du nœud actuel (si elle existe) */
+		free(temp->str);
+		/** Libère le nœud actuel */
+		free(temp);
 	}
-	/** Libère la chaîne de caractères du nœud actuel (si elle existe) */
-	free(temp->str);
-	/** Libère le nœud actuel */
-	free(temp);
 }
