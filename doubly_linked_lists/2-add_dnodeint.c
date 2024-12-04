@@ -3,9 +3,9 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - 
+ * add_dnodeint - Adds a new node at the beginning of a doubly linked list.
  * @head: Pointer to the head of the doubly linked list.
- * @n:
+ * @n: The integer value to store in the new node.
  * Return: the address of the new element, or NULL if it failed
  */
 
