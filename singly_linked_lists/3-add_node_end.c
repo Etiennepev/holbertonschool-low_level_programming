@@ -24,8 +24,12 @@ list_t *add_node_end(list_t **head, const char *str)
 			free(new_node);
 			return (NULL);
 		}
+		while (str[lenght] != '\0')
+		{
+			lenght++;
+		}
+		new_node->len = lenght;
 
-		new_node->len = strlen(str);
 		new_node->next = NULL;
 /**Si la list est vide le nouveau noeud devient la tête*/
 		if (*head == NULL)
