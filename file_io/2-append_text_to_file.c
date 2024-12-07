@@ -5,7 +5,8 @@
 #include <string.h>
 #include "main.h"
 
-/**Appends text at the end of a file.
+/**
+ * append_text_to_file - Appends text at the end of a file.
  * @filename: Pointer to the name of the file.
  * @text_content: String to append to the file.
  * Return: 1 on success, -1 on failure.
