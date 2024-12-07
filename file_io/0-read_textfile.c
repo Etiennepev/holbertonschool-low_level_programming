@@ -40,5 +40,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	for (i = 0; buffer[i]; i++)
 		write (1, &buffer[i], 1);
 	close(fd);
+	free(buffer);
 	return (bytesread);
 }
