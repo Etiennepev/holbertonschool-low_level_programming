@@ -12,9 +12,10 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
+	int fd, i;
 	char *buffer;
-	ssize_t bytesread, byteswrite;
+	ssize_t bytesread;
+
 
 	if (filename == NULL)
 		return (0);
@@ -36,13 +37,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	byteswrite = write(fd, buffer, letters);
-	if (byteswrite == -1 || byteswrite != bytesread)
-	{
-		free(buffer);
-		close(fd);
-		return (0);
-	}
-	free(buffer);
-	return (0);
+	for (i = 0; buffer[i]; i++)
+		write (1, &buffer[i], 1);
+	close(fd);
+	return (bytesread);
 }
