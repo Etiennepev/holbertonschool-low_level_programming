@@ -5,13 +5,12 @@
 #include <string.h>
 #include "main.h"
 
-/**
- * create_file - Reads a text file and prints it to POSIX standard output.
- * @filename: Pointer to the name of the file to read.
- * @text_content: Number of letters to read and print.
- * Return: Actual number of letters read and printed, or 0 on failure.
+/**Appends text at the end of a file.
+ * @filename: Pointer to the name of the file.
+ * @text_content: String to append to the file.
+ * Return: 1 on success, -1 on failure.
  */
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
 	ssize_t byteswrite = 0;
