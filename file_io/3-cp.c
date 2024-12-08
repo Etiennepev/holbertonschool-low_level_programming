@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <sys/stat.h>
 
+#define BUFFER_SIZE 1024
+
 /**
  * error_exit - Prints an error message and exits with a specific code.
  * @code: The exit code to terminate the program with.
